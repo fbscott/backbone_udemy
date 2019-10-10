@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Backbone Tutorial</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,14 +14,14 @@
         <script src="js/lib/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <div id="js-spa-container"></div>
-
+        <div id="container"></div>
         <script src="js/lib/jquery-min.js"></script>
         <script src="js/lib/underscore-min.js"></script>
         <script src="js/lib/backbone-min.js"></script>
-        <!-- <script src="js/models/project_vehicle.js"></script> -->       <!-- model lesson -->
-        <!-- <script src="js/collections/project_vehicles.js"></script> --> <!-- collection lesson -->
-        <!-- <script src="js/views/songView_with_model.js"></script> -->    <!-- view lesson -->
-        <script src="js/views/songView_with_collection.js"></script>
+        <script id="vehicleTemplate" type="text/template">
+             <%= registrationNumber %>
+             <button class="delete">Delete</button>
+        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
