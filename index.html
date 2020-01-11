@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Backbone Tutorial</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Backbone Tutorial</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-        <script src="js/lib/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <div id="js-spa-container"></div>
+    <script src="js/lib/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="js-spa-container"></div> -->
 
-        <script src="js/lib/jquery-min.js"></script>
-        <script src="js/lib/underscore-min.js"></script>
-        <script src="js/lib/backbone-min.js"></script>
-        <!-- <script src="js/models/project_vehicle.js"></script> -->       <!-- model lesson -->
-        <!-- <script src="js/collections/project_vehicles.js"></script> --> <!-- collection lesson -->
-        <!-- <script src="js/views/songView_with_model.js"></script> -->    <!-- view lesson -->
-        <script src="js/views/songView_with_collection.js"></script>
-    </body>
+    <table id="js-vehicles"></table>
+
+    <script src="js/lib/jquery-min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+
+    <!-- Templates -->
+    <!-- <script id="songTemplate" type="text/html">
+      Listen to <button><%= title %></button>
+      <% if (plays > 100) { %>
+        <span class="popular">Popular</span>
+      <% } %>
+    </script> -->
+
+    <script id="vehicleTemplate" type="text/html">
+      <td><%= year %></td>
+      <td><%= make %></td>
+      <td><%= model %></td>
+      <td><%= color %></td>
+      <td><%= vin %></td>
+      <td><button class="js-delete">Delete</button></td>
+    </script>
+    <!-- End Templates -->
+
+    <!-- <script src="js/models/_project.js"></script> -->      <!-- project: model -->
+    <!-- <script src="js/collections/_project.js"></script> --> <!-- project: collection -->
+    <script src="js/views/_project.js"></script>       <!-- project: views -->
+  </body>
 </html>

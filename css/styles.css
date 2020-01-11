@@ -4,3 +4,9 @@ body {
 }
 
 body, p { font-size: 24px; }
+
+td {
+   padding: 15px;
+   border: 1px solid #cccccc;
+   font-size: 12pt;
+}
